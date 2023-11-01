@@ -1,0 +1,30 @@
+type Product {
+  id: ID!
+  brand: String!
+  name: String!
+  alt: String!
+  images: [String!]!
+  price: Float!
+  description: String!
+  qualities: [String!]!
+}
+
+type Query {
+  getProduct(id: ID!): Product
+  getAllProducts: [Product!]!
+}
+
+type Mutation {
+  addToCart(productId: ID!, quantity: Int!): ShoppingCartItem
+  removeFromCart(productId: ID!): ShoppingCartItem
+  clearCart: ShoppingCart
+}
+
+type ShoppingCartItem {
+  product: Product!
+  quantity: Int!
+}
+
+type ShoppingCart {
+  items: [ShoppingCartItem!]!
+}

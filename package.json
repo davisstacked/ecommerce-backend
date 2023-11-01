@@ -1,0 +1,31 @@
+{
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "description": "the backend for a an ecommerce store",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"jest\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"https://github.com/davisstacked/ecommerce-backend\""
+  },
+  "keywords": [
+    "[\"e-commerce\"",
+    "\"shopping\"",
+    "\"online",
+    "store\"",
+    "\"GraphQL\"",
+    "\"MERN\"",
+    "\"Node.js\"]"
+  ],
+  "author": "Leah Davis",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "mongoose": "^8.0.0"
+  }
+}
